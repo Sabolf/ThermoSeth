@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure relative positioning */
+}
+
+#map_container {
+    border: 3px solid black;
+    height: 400px; /* Ensure parent container has height */
+    width: 70%; /* Ensure it takes full width of the parent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Ensure it stays within its boundaries */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+#map {
+    height: 100% !important; /* Take full height of the container */
+    width: 100%; /* Take full width of the container */
+    display: block;
+    position: relative; /* Ensure it stays within its boundaries */
+}
+
+.hot {
+    background-color: red !important;
+    color: white !important;
+}
+
+.cold {
+    background-color: blue !important;
+    color: white !important;
+}
+
+.acceptable {
+    background-color: green !important;
+    color: white !important;
+}
+
+.wow.leaflet-tooltip{
+    font-size: 90px;
+}

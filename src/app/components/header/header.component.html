@@ -1,0 +1,26 @@
+<main>
+    <div id="first">
+        <span id="name">ThermoSeth</span>
+        <div (click)="toggleMenu($event)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="second">
+        <input placeholder="Search">
+    </div>
+    <div id="third">
+        <button>Sign Out</button>
+    </div>
+</main>
+<div id="menu_container" [class.menu_visible]="menuVisible">
+    <ul>
+        <li><a href="/dash">Dashboard</a></li>
+        <li><a href="/map">Map</a></li>
+        <li><a href="/tiles">Tiles</a></li>
+        <li><a href="/reports">Reports</a></li>
+        <li><a href="/settings">Settings</a></li>
+    </ul>
+</div>
+

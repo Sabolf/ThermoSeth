@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a:visited{
+    color: black;
+}
+main{
+    display: flex;
+    border: 1px solid black;
+}
+
+.content{
+    height: calc(100vh - 50px);
+    width: 75vw;
+}
+
+@media (max-width: 480px) {
+    .content{
+        width: 100vw;
+    }
+}
+

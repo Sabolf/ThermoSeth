@@ -1,0 +1,37 @@
+<head>
+    <script src="plotly-3.0.0.min.js" charset="utf-8"></script>
+</head>
+
+<main class = "content">
+    <div id = "graphContainer"  style="width:600px;height:250px;"></div>
+    <div>
+        <span>Device Name:</span>
+        <span>{{devices[id].name}}</span>
+    </div>
+    <div>
+        <span>Address:</span>
+        <span>{{devices[id].address}}</span>
+    </div>
+    <div>
+        <span>Temp:</span>
+        <span>{{devices[id].temp}} °C</span>
+    </div>
+    <div>
+        <span>Longitude | Latitude:</span>
+        <span>{{devices[id].lat}} | {{devices[id].lng}}</span>
+    </div>
+    <!-- <div *ngFor="let x of deviceTemps">
+        <li>{{x['temp']}}</li>
+    </div> -->
+</main>
+<script>
+    GRAPH = document.getElementById('graph');
+
+    Plotly.newPlot(GRAPH, [{
+        x: [5],
+        y: [10]
+    }],
+    
+    {margin: { t: 0}}
+    )
+</script>

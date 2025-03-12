@@ -1,0 +1,39 @@
+#main_header{
+    width: 100vw;
+}
+div {
+    display: flex;
+}
+
+#first {
+    flex: 1;
+    background-color: rgb(95, 95, 95);
+    height: calc(100vh - 50px);
+}
+
+@media (max-width: 480px) {
+   
+    #first{
+     width: 0vw;
+    }
+
+   
+    #second{
+        width: 100vw;
+    }
+
+    #main_content{
+        border: 1px solid red;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 480px) {
+    #first {
+        width: 25vw;
+    }
+
+    #second {
+        width: 75vw;
+    }
+}

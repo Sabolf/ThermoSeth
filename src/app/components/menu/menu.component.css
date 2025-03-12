@@ -1,0 +1,27 @@
+main{
+    justify-content: start;
+}
+
+
+ul{
+    width: 100%;
+}
+ul li{
+    padding-left: 5%;
+    font-size: clamp(10px, 4vw, 15px);
+    border-bottom: 1px solid white;
+    padding: 5%;
+    margin-bottom: 5px;
+}
+
+
+
+a{
+    color: white;
+}
+
+@media (max-width: 480px) {
+    li{
+        display: none;
+    }
+}

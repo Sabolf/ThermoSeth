@@ -1,0 +1,124 @@
+
+
+
+span, input, button{
+    width: 100%;
+}
+
+span{
+margin-left: 5%;
+color: rgb(238, 236, 231);
+font-size: clamp(10px, 4vw, 20px);
+}
+
+input{
+   padding-left: 5%;
+}
+
+button{
+    background-color: rgb(23, 23, 90);
+    color: rgb(238, 236, 231);
+    border: 1px solid black;
+
+}
+
+#first,#second,#third{
+    display: flex;
+    height: 30px;
+}
+
+#first{
+    align-items: center;
+    background-color: rgb(23, 23, 90);
+
+}
+
+#first div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#first div span{
+    background-color: white;
+    width: 33px;
+    height: 5px;
+    
+}
+
+#second{
+ 
+}
+
+#third{
+   
+}
+
+
+
+@media (max-width: 480px){
+    #first{
+        justify-content: center;
+    }
+
+    #first, #third{
+        flex: 1
+    }
+
+    #second{
+        flex: 3
+    }
+
+    #first #name{
+        display: none;
+    }
+
+    #menu_container {
+        position: fixed;
+        width: 100%;
+        background-color: rgb(82, 79, 115);
+        display: flex;
+        justify-content: center;
+        font-size: clamp(20px, 4vw, 25px);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+    
+    .menu_visible {
+        transform: translateX(0) !important;
+    }
+    
+
+    li{
+        border: 1px solid rgb(9, 9, 128);
+        width: 100vw;
+        padding: 5%;
+        text-align: center;
+        color: white;
+    }
+
+    a{
+        color: white;
+    }
+}
+
+@media (min-width: 480px){
+    #menu_container{
+        display: none;
+    }
+    #first div{
+        display: none;
+    }
+
+    #first{
+        width: 25vw;
+    }
+
+    #second{
+        width: 60vw;
+    }
+
+    #third{
+        width: 15vw;
+    }
+}

@@ -1,0 +1,26 @@
+<main class="content">
+    <div id = device_capsule_container>
+        <div 
+        id="device_capsule" 
+        *ngFor="let x of allDevices"
+        [ngClass]="{
+            'hot': x['temp'] > 15,
+            'acceptable': x['temp'] <= 15 && x['temp'] >= 5,
+            'cold': x['temp'] < 5
+        }">
+            <div id=name_container>
+                <span>{{x["name"]}}</span>
+            </div>
+            <div>
+                <button [routerLink]="['/details', x['id']]">Details</button>
+            </div>
+            <div id=information_container>
+                <span>{{x["address"]}}</span>
+                <span>{{x["temp"]}}°C</span>
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
