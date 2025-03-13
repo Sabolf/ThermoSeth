@@ -1,9 +1,12 @@
 <head>
-    <script src="plotly-3.0.0.min.js" charset="utf-8"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <main class = "content">
-    <div id = "graphContainer"  style="width:600px;height:250px;"></div>
+    <div id = "graph_container">
+        <div id="graph"></div>
+    </div>
+   
     <div>
         <span>Device Name:</span>
         <span>{{devices[id].name}}</span>
@@ -24,14 +27,3 @@
         <li>{{x['temp']}}</li>
     </div> -->
 </main>
-<script>
-    GRAPH = document.getElementById('graph');
-
-    Plotly.newPlot(GRAPH, [{
-        x: [5],
-        y: [10]
-    }],
-    
-    {margin: { t: 0}}
-    )
-</script>

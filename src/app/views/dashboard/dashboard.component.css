@@ -1,73 +1,62 @@
-*{
+.hot{
+    background-color: salmon;
 }
 
-main{
-    flex-direction: column;
-    overflow-y: auto;
-    overflow-x: auto;
+.acceptable{
+    background-color: lightgreen;
 }
 
-#device_capsule{
-  border-radius: 10%;
-  background-color: antiquewhite;
-  height: 35vh;
-  width: 45%;
-  margin: 2%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-  
-}
-
-#name_container{
-    height: 40%;
-    border: 1px solid black;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: antiquewhite;
-}
-
-#information_container{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    height: 70%;
-    justify-content: space-around;
-    width: 50%;
-    align-items: center;
-    text-align: center;
-    background-color: antiquewhite;
+.cold{
+    background-color: lightblue;
 }
 
 #device_capsule_container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     justify-content: space-around;
 }
 
-
-#device_capsule span{
-}
-.date{
-border:1px solid red;
-}
-
-.temp{
-    border:1px solid blue;
-}
-
-.cold{
-    background-color: lightblue !important; 
+#device_capsule{
+    border: 1px solid black;
+    width: 45%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3% !important;
+    justify-content: center;
 }
 
-.hot{
-    background-color: salmon !important;
+#name_container{
+    border-bottom: 2px solid black;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 2%;
+    
 }
 
-.acceptable{
-    background-color: lightgreen !important;
+#info_container{
+    padding: 3%;
+    text-align: center;
+    display: flex;
+    font-size: .9rem !important;
+    justify-content: center;
 }
 
+#info_container div{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    border: 1px solid black;
+}
+#button_container{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: transparent;
+    width: 75%;
+}

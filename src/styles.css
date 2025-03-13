@@ -15,7 +15,7 @@ main{
 }
 
 .content{
-    height: calc(100vh - 50px);
+    height: 95vh;
     width: 75vw;
 }
 

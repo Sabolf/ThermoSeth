@@ -1,0 +1,12 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+}
+
+p{
+    border:1px solid grey;
+    padding: 5%;
+}

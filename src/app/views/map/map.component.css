@@ -5,7 +5,6 @@
 }
 
 .content {
-    width: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,13 +14,14 @@
 
 #map_container {
     border: 3px solid black;
-    height: 400px; /* Ensure parent container has height */
-    width: 70%; /* Ensure it takes full width of the parent */
+    height: 450px; /* Ensure parent container has height */
+    width: 90%; /* Ensure it takes full width of the parent */
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative; /* Ensure it stays within its boundaries */
     overflow: hidden; /* Prevent content from overflowing */
+    z-index: 9998;
 }
 
 #map {
